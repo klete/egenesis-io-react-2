@@ -1,0 +1,245 @@
+User name:	AKelley
+Password:	Bubba621
+
+
+{
+	"first_name":"ANITA",
+	"middle_name":"L",
+	"last_name":"KELLEY",
+	"user_no":14932,
+	"cert_name":"ANITA L KELLEY",
+	"cert_entity":6,
+	"email":"",
+	"roles":["STUDENT"],
+	"is_admin":false,
+	"is_student":true,
+	"id":14932,
+	"transcript":null,
+	"sortedTranscript":null,
+	"course":null,
+	"accreditationCode":"Approval Number: TDH 600524",
+	"certEntity":6
+
+}
+
+{
+	"first_name":"ANITA",
+	"middle_name":"L",
+	"last_name":"KELLEY",
+	"user_no":14932,
+	"cert_name":"ANITA L KELLEY",
+	"cert_entity":6,
+	"email":"",
+	"roles":["STUDENT"],
+	"is_admin":false,
+	"is_student":true,
+	"id":14932,
+	"transcript":null,
+	"sortedTranscript":null,
+	"course":null,
+	"accreditationCode":"Approval Number: TDH 600524",
+	"certEntity":6
+}
+
+{
+	"first_name":"ANITA",
+	"middle_name":"L",
+	"last_name":"KELLEY",
+	"user_no":14932,
+	"cert_name":"ANITA L KELLEY",
+	"cert_entity":6,
+	"email":"",
+	"roles":["STUDENT"],
+	"is_admin":false,
+	"is_student":true,
+	"id":14932,
+	"course":null,
+	"accreditationCode":"Approval Number: TDH 600524",
+	"certEntity":6,
+	"transcript": [
+		{
+			"course_no":62,
+			"ceu_min_lecture_time":0,
+			"ceu_max_exam_time":0,
+			"ceu_pass_percent":70,
+			"credit_status":1,
+			"date_enrolled":"2010-04-12T20:32:50.049",
+			"date_completed":"2010-04-12T21:24:36.558",
+			"actual_lecture_time":2546,
+			"date_lecture_started":"2010-04-12T20:33:19.054",
+			"max_exam_time":0,
+			"min_lecture_time":0,
+			"pass_percent":70,
+			"result_code":1,
+			"sc_no":218992,
+			"status":7,
+			"user_no":14932,
+			"sylco_no":62,
+			"ceu":4,
+			"cecat_no":20,
+			"allow_certificate":true,
+			"exams": [
+				{
+					"test_no":1096,
+					"st_no":233968,
+					"actual_exam_time":378,
+					"max_exam_time":0,
+					"percent_correct":0.7,
+					"num_questions_correct":7,
+					"num_questions_given":10,
+					"date_completed":"2010-04-12T21:22:26.904",
+					"date_started":"2010-04-12T21:16:00.022"
+				}
+			],
+			"catalog":"EMS Basic (First Responder & EMT-B)",
+			"syllabus":"Pediatric",
+			"result":"Passed",
+			"name":"Infants and Children"
+		},{
+			"course_no":47,
+			"ceu_min_lecture_time":0,
+			"ceu_max_exam_time":0,
+			"ceu_pass_percent":70,
+			"credit_status":1,
+			"date_enrolled":"2010-04-12T21:31:12.241",
+			"date_completed":"2010-04-12T22:29:26.712",
+			"actual_lecture_time":2687,
+			"date_lecture_started":"2010-04-12T21:31:27.841",
+			"max_exam_time":0,
+			"min_lecture_time":0,
+			"pass_percent":70,
+			"result_code":1,
+			"sc_no":219001,
+			"status":7,
+			"user_no":14932,
+			"sylco_no":47,
+			"ceu":2,
+			"cecat_no":4,
+			"allow_certificate":true,
+			"exams": [
+				{
+					"test_no":1052,
+					"st_no":233976,
+					"actual_exam_time":393,
+					"max_exam_time":0,
+					"percent_correct":0.6,
+					"num_questions_correct":6,
+					"num_questions_given":10,
+					"date_completed":"2010-04-12T22:23:29.362",
+					"date_started":"2010-04-12T22:16:46.012"
+				},{
+					"test_no":1056,
+					"st_no":233979,
+					"actual_exam_time":184,
+					"max_exam_time":0,
+					"percent_correct":0.9,
+					"num_questions_correct":9,
+					"num_questions_given":10,
+					"date_completed":"2010-04-12T22:28:30.45",
+					"date_started":"2010-04-12T22:25:10.203"
+				}
+			],
+			"catalog":"EMS Basic (First Responder & EMT-B)",
+			"syllabus":"Patient Assessment",
+			"result":"Passed",
+			"name":"Assessment of the Pediatric and Geriatric Patients"
+		}
+	],
+	"sortedTranscript": [
+		{
+			"cecat_no":4,
+			"courses":
+				[{
+					"course_no":47,
+					"ceu_min_lecture_time":0,
+					"ceu_max_exam_time":0,
+					"ceu_pass_percent":70,
+					"credit_status":1,
+					"date_enrolled":"2010-04-12T21:31:12.241",
+					"date_completed":"2010-04-12T22:29:26.712",
+					"actual_lecture_time":2687,
+					"date_lecture_started":"2010-04-12T21:31:27.841",
+					"max_exam_time":0,
+					"min_lecture_time":0,
+					"pass_percent":70,
+					"result_code":1,
+					"sc_no":219001,
+					"status":7,
+					"user_no":14932,
+					"sylco_no":47,
+					"ceu":2,
+					"cecat_no":4,
+					"allow_certificate":true,
+					"exams":
+						[{
+							"test_no":1052,
+							"st_no":233976,
+							"actual_exam_time":393,
+							"max_exam_time":0,
+							"percent_correct":0.6,
+							"num_questions_correct":6,
+							"num_questions_given":10,
+							"date_completed":"2010-04-12T22:23:29.362",
+							"date_started":"2010-04-12T22:16:46.012"
+						},{
+							"test_no":1056,
+							"st_no":233979,
+							"actual_exam_time":184,
+							"max_exam_time":0,
+							"percent_correct":0.9,
+							"num_questions_correct":9,
+							"num_questions_given":10,
+							"date_completed":"2010-04-12T22:28:30.45",
+							"date_started":"2010-04-12T22:25:10.203"
+						}],
+					"catalog":"EMS Basic (First Responder & EMT-B)",
+					"syllabus":"Patient Assessment",
+					"result":"Passed",
+					"name":"Assessment of the Pediatric and Geriatric Patients"
+				}],
+			"name":"Patient Assessment"
+		},{
+			"cecat_no":20,
+			"courses":
+				[{
+					"course_no":62,
+					"ceu_min_lecture_time":0,
+					"ceu_max_exam_time":0,
+					"ceu_pass_percent":70,
+					"credit_status":1,
+					"date_enrolled":"2010-04-12T20:32:50.049",
+					"date_completed":"2010-04-12T21:24:36.558",
+					"actual_lecture_time":2546,
+					"date_lecture_started":"2010-04-12T20:33:19.054",
+					"max_exam_time":0,
+					"min_lecture_time":0,
+					"pass_percent":70,
+					"result_code":1,
+					"sc_no":218992,
+					"status":7,
+					"user_no":14932,
+					"sylco_no":62,
+					"ceu":4,
+					"cecat_no":20,
+					"allow_certificate":true,
+					"exams":
+						[{
+							"test_no":1096,
+							"st_no":233968,
+							"actual_exam_time":378,
+							"max_exam_time":0,
+							"percent_correct":0.7,
+							"num_questions_correct":7,
+							"num_questions_given":10,
+							"date_completed":"2010-04-12T21:22:26.904",
+							"date_started":"2010-04-12T21:16:00.022"
+						}],
+					"catalog":"EMS Basic (First Responder & EMT-B)",
+					"syllabus":"Pediatric",
+					"result":"Passed",
+					"name":"Infants and Children"
+				}],
+			"name":"Pediatric"
+		}
+	]
+}

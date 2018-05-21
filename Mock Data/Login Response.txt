@@ -1,0 +1,50 @@
+
+Login response
+
+{
+	"data":{
+		"user":{
+			"first_name":"ANITA",
+			"middle_name":"L",
+			"last_name":"KELLEY",
+			"user_no":14932,
+			"cert_name":"ANITA L KELLEY",
+			"cert_entity":6,
+			"email":"",
+			"roles":["STUDENT"],
+			"is_admin":false,
+			"is_student":true
+		},
+		"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vZWdlbmVzaXMuaW8vIiwic3ViIjoxNDkzMiwic2NvcGUiOlsiU1RVREVOVCJdLCJpYXQiOjE1MjY3NDU4NDQsImV4cCI6MTUyNjc0OTQ0NH0.crqisdH61E2nMDQRuJjelLrk4O--nLNp7tihjz4vBuM",
+		"tokenExpiration":1526749444774,
+		"status":200
+	},
+	"status":200,
+	"statusText":"",
+	"headers":{
+		"content-type":"application/json"
+	},
+	"config":{
+		"transformRequest":{},
+		"transformResponse":{},
+		"timeout":0,
+		"xsrfCookieName":"XSRF-TOKEN",
+		"xsrfHeaderName":"X-XSRF-TOKEN",
+		"maxContentLength":-1,
+		"headers":{
+			"Accept":"application/json, text/plain, */*",
+			"Content-Type":"application/json;charset=utf-8"
+		},
+		"baseURL":"https://api.egenesis.io/dev",
+		"method":"post",
+		"url":"https://api.egenesis.io/dev/login",
+		"data":"{\"username\":\"AKelley\",\"password\":\"Bubba621\",\"rememberCredentials\":true}"
+	},
+	"request":{
+		"__raven_xhr":{
+			"method":"POST",
+			"url":"https://api.egenesis.io/dev/login",
+			"status_code":200
+		}
+	}
+}

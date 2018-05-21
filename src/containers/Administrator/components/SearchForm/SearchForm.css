@@ -1,0 +1,26 @@
+.SearchForm td.search-results {    
+    height: 30px;
+    width: 235px;
+    vertical-align: bottom;
+    text-align: right;
+    line-height: 1.1;
+}
+.SearchForm td.search-results span {
+    color: blue;
+    font-size: 14px;
+}
+.SearchForm td.search-results span:hover {
+    cursor: pointer;
+}
+.SearchForm td.header-label {
+    width: 140px;
+    height: 30px;
+    vertical-align: bottom;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    font-family: inherit;
+}
+.SearchForm table#search-form-header {
+    margin: 10px 0;
+}

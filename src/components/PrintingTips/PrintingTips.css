@@ -1,0 +1,17 @@
+.PrintingTips .pop-up-link {
+	color: blue;
+	text-decoration: underline;
+	width: 640px; 
+	text-align: right;
+	margin: 12px 0;
+}
+.PrintingTips .pop-up-link:hover {
+	cursor: pointer;
+}
+.PrintingTips {
+    margin: 0;
+    padding: 16px;
+	background-color: white;
+	height: 100%;
+	width: 100%
+}

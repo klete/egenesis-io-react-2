@@ -1,0 +1,143 @@
+.home {
+    background-image: url('./assets/background.gif');
+    background-repeat: repeat-x;
+    height: 100%;
+    background-color: white;
+    background-position: 0px 45px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 18em;
+    text-align: center;
+}
+
+.contentArea {
+    width: 600px;
+    margin: 0 auto;
+    z-index: 1;
+}
+form.signIn {
+    margin: 0; 
+    padding: 0;
+}
+
+.signInButton {
+    width: 6em; 
+    margin: 0; 
+    padding: 0; 
+    height: 1.8em; 
+}
+.signInLinks {
+    font-size: 14px;
+    color: #0066ff;
+    font-weight: 900;
+    text-decoration: none;
+}
+.signInLinks:hover {
+    color: #0066ff;
+    text-decoration: underline;
+}
+.logo {
+    background-image: url("./assets/logo.png");
+    height: 298px;
+    width: 600px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+.errorBox {
+    position: relative;
+    border: 1px solid black;
+    padding: 5px 0;
+    background-color: white;
+    border-top: none;
+    left: -1px;
+}
+ul.error {
+    margin: 0; 
+    padding: 0 0 0 19px;
+}
+span.errorText {
+    white-space: nowrap; 
+    color: red; 
+    font-weight: 500;
+}
+#rememberBox {
+    width: 170px;
+}
+.linksA {
+    width: 90px;
+}
+.linksB {
+    width: 100px;
+}
+.linksC {
+    width: 195px;
+    padding: 0 35px 0 0; 
+    text-align: right;
+}
+.linksD {
+    width: 10px;
+    padding: 0 5px 0 0;
+}
+a#forgotPassword {
+    color: blue;
+}
+a#forgotPassword:hover {
+    cursor: pointer;
+    text-decoration: underline
+}
+#linksBox {
+    padding-top: 3px;
+}
+#username-label {
+    width: 260px;
+    text-align: right;
+}
+#username-field {
+    width: 80px;
+    padding-left: 5px;
+}
+#password-label {
+    width: 65px;
+    text-align: right;
+}
+#password-field {
+    width: 85px;
+    padding-left: 5px;
+}
+#submit-button-box {
+    width: 90px;
+    padding-left: 10px;
+}
+#submit-button {
+    width: 80px; 
+    margin: 0; 
+    padding: 0;
+}
+#submit-button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+#password {
+    margin: 0; 
+    width: 72px; 
+    letter-spacing: .05em;
+}
+#username {
+    margin: 0; 
+    width: 72px;
+}
+#rememberCredentials {
+    margin: 0;
+    padding: 0;
+}

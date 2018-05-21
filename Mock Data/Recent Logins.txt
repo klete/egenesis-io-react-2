@@ -1,0 +1,100 @@
+05/18/18	14:47:04	Howland, Darren	Howland, Darren De'un
+05/18/18	00:38:00	Knabe, Bradley	Bradley K Knabe
+05/18/18	00:20:45	Knabe, Bradley	Bradley K Knabe
+05/10/18	16:37:24	Romer, Jon	Jon P Romer Jr
+05/09/18	23:27:42	Romer, Jon	Jon P Romer Jr
+05/09/18	23:11:10	Romer, Jon	Jon P Romer Jr
+05/08/18	20:53:05	Romer, Jon	Jon P Romer Jr
+05/08/18	20:51:49	Romer, Jon	Jon P Romer Jr
+05/08/18	08:35:23	Rhodes, Lynn	Calhoun County EMS
+05/07/18	00:19:03	SHELTON, JOHN	SHELTON, JOHN W.
+05/02/18	22:57:22	ridge, chris	chris ridge
+05/02/18	17:28:01	Tabor, Robert	PPDI
+05/01/18	11:56:55	Monez, Jose	Laredo Fire Department
+04/29/18	08:19:04	Bellamy, Duane	Bellamy, Duane
+04/21/18	14:45:35	Garcia, Eric	Garcia, Eric E
+04/18/18	19:18:31	Arredondo, Pete	Arredondo, Pete
+04/14/18	20:27:58	Martin, Gregory	Martin, Gregory G
+04/10/18	11:40:50	French, Trina	trina n french french
+04/05/18	18:52:10	Blackburn, Douglas	Blackburn, Douglas A,
+04/01/18	00:14:09	Kern, Christina	Kern, Christina Dawn
+04/01/18	00:12:42	Kern, Christina	Kern, Christina Dawn
+03/31/18	01:41:00	Baker, Jon	Baker, Jon P.
+03/29/18	16:36:22	Bittick, Michael	Bittick, Michael Chad
+03/29/18	11:28:42	Cavaness, Ryan	Marfa City-County EMS
+03/29/18	11:26:24	Lagarde, George	Marfa City-County EMS
+03/29/18	10:35:40	Streeter, Rick	Streeter, Rick F.
+03/29/18	10:35:37	Streeter, Rick	Streeter, Rick F.
+03/26/18	15:28:47	Files, James	James Patrick Files Jr
+03/26/18	13:36:27	Maddox, Jason	Orange Fire Department
+03/24/18	08:16:09	Griffin, Michele	Griffin, Michele A.
+03/23/18	14:44:37	Macias, Sergio	Sergio Macias
+03/20/18	14:59:25	Salmon, Patrena	Patrena L Salmon
+03/20/18	14:56:40	Salmon, Patrena	Patrena L Salmon
+03/20/18	08:29:49	Pugh, Carey	Emergency Consultants
+03/20/18	08:28:52	Pugh, Carey	Emergency Consultants
+03/19/18	17:42:06	Garcia, Berta	Berta Garcia
+03/19/18	14:48:57	Barclay, Jerry	Turkey EMS
+03/15/18	07:49:31	Kowalski, Michael	Transocean Deepwater Drilling
+03/13/18	15:44:52	Vaclavik, Jeremy	Jeremy Vaclavik
+03/13/18	15:44:35	Vaclavik, Jeremy	Jeremy Vaclavik
+03/13/18	15:40:13	Vaclavik, Jeremy	Jeremy Vaclavik
+03/12/18	20:40:20	Marts, Ben	Odessa Fire Department
+03/12/18	15:01:35	Fenner, Lori	Fenner, Lori D
+03/11/18	23:21:16	Carney, Laurel	Laurel A Carney
+03/10/18	21:41:22	Thomson, Carmen	Thomson, Carmen
+03/10/18	21:39:07	Thomson, Carmen	Thomson, Carmen
+03/10/18	00:15:14	Rodriguez, Mario	Laredo Fire Department
+03/07/18	10:57:39	Guerra, Lisa	Guerra, Lisa A
+03/06/18	15:09:44	Davis, Dakota	Dakota Davis
+03/06/18	05:45:40	Alcazar, Jose	Jose Valentin Alcazar
+03/01/18	03:10:08	Davis, Michele	Davis, Michele
+02/28/18	16:50:53	Barclay, Jerry	Turkey EMS
+02/28/18	14:33:33	Kolb, Charles	Charles M. Kolb
+02/28/18	11:59:13	Brown, Donovan	Donovan Brown
+02/28/18	05:59:22	Oliva, Joe	Oliva, Joe
+02/26/18	14:47:39	Pugh, Carey	Emergency Consultants
+02/21/18	21:37:11	Fine, Brian	Tolar Fire Department
+02/21/18	11:26:29	Hernandez, Lonnie	Lonnie R Hernandez
+02/20/18	13:30:31	TOVAR, LYDIA	TOVAR, LYDIA LOPEZ
+02/20/18	13:27:46	TOVAR, LYDIA	TOVAR, LYDIA LOPEZ
+02/19/18	08:48:27	Crescitelli, Anthoney	Secorp/Entech
+02/18/18	19:01:27	Tankersley, Jody	Jody Tankersley
+02/18/18	11:37:18	Spinks, Rhonda	Spinks, Rhonda E.
+02/17/18	08:31:13	Spinks, Rhonda	Spinks, Rhonda E.
+02/16/18	21:49:08	Tabor, Robert	PPDI
+02/16/18	19:43:22	Tankersley, Jody	Jody Tankersley
+02/16/18	17:11:42	Jackson, Patrick	Patrick Scott Jackson
+02/16/18	09:04:52	French, Trina	trina n french french
+02/16/18	09:03:58	French, Trina	trina n french french
+02/15/18	16:10:06	McDonald, Raymond	McDonald, Raymond R
+02/10/18	08:13:36	Guerra, Lisa	Guerra, Lisa A
+02/09/18	02:52:25	Spinks, Rhonda	Spinks, Rhonda E.
+02/08/18	21:22:28	Melde, Curtis	Melde, Curtis L
+02/08/18	19:34:01	Melde, Danetta	Danetta L Melde
+02/08/18	19:14:17	Melde, Danetta	Danetta L Melde
+02/08/18	13:28:01	Brennan, Patrick	Brennan, Patrick J.
+02/07/18	19:22:39	Tankersley, Jody	Jody Tankersley
+02/05/18	19:38:02	Tankersley, Jody	Jody Tankersley
+02/05/18	11:23:43	Chauncy, James	James Aurther Chauncy Jr.
+02/05/18	01:40:50	Murphy, Logan	Logan T Murphy
+02/04/18	18:34:56	Bowers-Gratehouse, Teresa	Gratehouse, Teresa G.
+02/04/18	08:29:58	O'Quin, Jacob	Life Care EMS
+02/03/18	22:50:55	Tankersley, Jody	Jody Tankersley
+02/03/18	22:50:18	Tankersley, Jody	Jody Tankersley
+02/01/18	16:43:18	Tankersley, Jody	Jody Tankersley
+01/31/18	21:10:48	Treiber, Shannon	Shannon L. Treiber
+01/30/18	09:48:33	Tankersley, Jody	Jody Tankersley
+01/30/18	09:22:25	Tankersley, Jody	Jody Tankersley
+01/30/18	08:35:11	Tankersley, Jody	Jody Tankersley
+01/30/18	08:33:59	Tankersley, Jody	Jody Tankersley
+01/28/18	16:42:14	Tankersley, Jody	Jody Tankersley
+01/28/18	16:35:19	Tankersley, Jody	Jody Tankersley
+01/28/18	15:58:58	Tankersley, Jody	Jody Tankersley
+01/27/18	14:38:08	Jones, Rickey	Woden Fire Department
+01/25/18	10:02:55	Weir, Matthew	Matthew W Weir
+01/22/18	11:57:49	Hernandez, Pamela	Hernandez, Pamela
+01/22/18	11:56:10	Spinks, Rhonda	Spinks, Rhonda E.
+01/19/18	12:46:00	Marrero, Norberto	Marrero, Norberto C.
+01/19/18	12:44:10	Marrero, Norberto	Marrero, Norberto C.
+01/18/18	18:43:07	Mejia, Sharon	Mejia, Sharon

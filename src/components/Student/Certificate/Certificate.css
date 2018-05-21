@@ -1,0 +1,247 @@
+.Certificate div#links-bar {
+    height: 30px;
+    width: 640px; 
+}
+.Certificate .pop-up-link {
+    float: right;
+    padding-left: 20px;
+}
+.Certificate .pop-up-link {
+    color: blue;
+	cursor: pointer;
+	text-decoration: none;
+}
+.Certificate .pop-up-link:hover {
+	text-decoration: underline;
+}
+.Certificate.panel {
+    background-color: transparent;
+}
+.Certificate div#canvas {
+    position: relative; 
+    width: 640px; 
+    height: 480px; 
+    margin: .1em; 
+    padding: 0; 
+    background-image: url('./assets/eGenesisCertificate.jpg'); 
+    background-repeat: no-repeat;
+}
+div#california {
+    background-color: transparent; 
+    width: 280px; 
+    height: 55px; 
+    position: absolute; 
+    top: 70px; 
+    left: 300px; 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial'; 
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+div#certify {
+    background-color: transparent;
+    position: absolute;
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 12px;
+    color: rgb(84, 78, 135);
+    top: 200px;
+    left: 51px;
+    width: 539px;
+    height: 20px;
+}
+
+div#certname {
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    top: 220px;
+    left: 51px; 
+    width: 539px;
+    height: 20px;
+}
+
+div#has-successfully-completed-the-course {
+    background-color: transparent;
+    position: absolute;
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 12px;
+    color: rgb(84, 78, 135);
+    top: 242px;
+    left: 51px;
+    width: 539px; 
+    height: 20px;
+}
+
+div#certificate-title {
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    top: 260px;
+    left: 51px;
+    width: 539px; 
+    height: 20px;
+}
+
+div#in-the-category-of {
+    background-color: transparent;
+    position: absolute;
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 12px;
+    color: rgb(84, 78, 135);
+    top: 282px;
+    left: 51px;
+    width: 539px; 
+    height: 20px;
+}
+
+div#certificate-category {
+    background-color: transparent; 
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    font-size: 15px;                                
+    top: 300px; 
+    left: 51px; 
+    width: 539px; 
+    height: 20px;
+}
+
+div#certificate-date-completed {
+    background-color: transparent; 
+    position: absolute; 
+    text-align: center;
+    font-size: 15px;
+    top: 322px; 
+    left: 51px; 
+    width: 270px; 
+    height: 20px;
+}
+
+div#certificate-ceu {
+    background-color: transparent; 
+    position: absolute; 
+    text-align: center;
+    font-size: 15px;
+    top: 322px; 
+    left: 321px; 
+    width: 270px; 
+    height: 20px;
+}
+
+div#ems-coordinator-signature {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 350px; 
+    left: 51px; 
+    width: 165px; 
+    height: 28px;
+}                    
+div#fire-coordinator-signature {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 350px; 
+    left: 425px; 
+    width: 165px; 
+    height: 28px;
+}    
+
+div#ems-coordinator-a {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 380px; 
+    left: 51px; 
+    width: 165px; 
+}
+div#ems-coordinator-b {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 395px; 
+    left: 51px; 
+    width: 165px; 
+}
+div#fire-coordinator-a {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 380px; 
+    left: 430px; 
+    width: 165px; 
+}
+div#fire-coordinator-b {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 10px;
+    top: 395px; 
+    left: 430px; 
+    width: 165px; 
+}
+    
+div#egenesis-address {
+    position: absolute; 
+    text-align: center;
+    font-weight: bold; 
+    color: rgb(84, 78, 135); 
+    font-family: 'Lucida Grande','Lucida','Helvetica','Arial';
+    font-size: 9px;
+    top: 425px; 
+    left: 51px; 
+    width: 539px; 
+    height: 20px;
+}
+
+div#accreditation-code {
+    background-color: transparent; 
+    position: absolute; 
+    text-align: left;
+    font-weight: bold; 
+    font-size: 12px; 
+    color: rgb(136, 136, 136);
+    top: 410px;
+    left: 65px; 
+    width: 250px; 
+    height: 20px;
+}
+div#reference-number {
+    background-color: transparent; 
+    position: absolute; 
+    text-align: right;
+    font-size: 10px; 
+    vertical-align: bottom;
+    padding-right: 5px;
+    top: 410px;
+    left: 475px; 
+    width: 100px; 
+    height: 20px;
+}

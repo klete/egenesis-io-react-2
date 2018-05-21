@@ -1,0 +1,6 @@
+table#loginsReport {
+    margin: 16px;
+}
+table#loginsReport td {
+    padding: 8px;
+}

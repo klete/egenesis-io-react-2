@@ -1,0 +1,13 @@
+table#searchResults {
+    margin: 16px;
+}
+table#searchResults td {
+    padding: 8px;
+}
+td.studentItem { 
+    color: blue; 
+}
+td.studentItem:hover { 
+    cursor: pointer;
+    text-decoration: underline; 
+}

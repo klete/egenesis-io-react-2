@@ -1,0 +1,27 @@
+.list-group-item {
+    padding: 0 0 15px 0;
+}
+a {
+    color: blue;
+}
+
+
+table#courses-list th.completed {
+    width: 8em;
+}
+table#courses-list th.course {
+    width: 30em;
+}
+table#courses-list th.ceu {
+    width: 3.5em;
+    text-align: center;
+}
+table#courses-list td.ceu {
+    text-align: right;
+}
+table#courses-list td.results {
+    text-align: center;
+}
+table#courses-list td.pdf {
+    text-align: center;
+}

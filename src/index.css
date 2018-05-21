@@ -1,0 +1,36 @@
+html, body, div#root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #9ECFE0;
+  /* background-color: #e3e3e3; */
+}
+.alert {
+  background: #ffffff;
+  border: 1px #000000;
+  border-style: none solid solid solid;
+  box-sizing: border-box;
+  font-size: 14px;
+  left: 50%;
+  margin-left: -190px;
+  padding: 10px;
+  position: absolute;
+  top: 46px;
+  width: 600px;
+}
+
+.alert--status-error {
+  color: #ff0000;
+}
+ul.with-links li, ul.with-links li a {
+  color: blue;
+}
+ul.with-links li:hover, ul.with-links li a:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.results.link, .certificate.link {
+    color: blue;    
+}
+.results.link:hover, .certificate.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
