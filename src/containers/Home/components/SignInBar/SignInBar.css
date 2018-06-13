@@ -4,13 +4,14 @@
     background-position: 0px 0px;
     border-bottom: 1px solid #000000;
     font-size: 14px;
-    height: 45px;
+    height: 50px;
     width: 100%;
 }
 
 .sign-in-bar__inner-container {
     height: 39px;
     margin: 0 auto;
+    padding: 5px 0 0 0;
     width: 600px;
 }
 
