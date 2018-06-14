@@ -1,0 +1,46 @@
+.StudentAdmin {
+    opacity: 0;
+}
+
+.StudentAdmin.fadein {
+    animation-duration: 3000ms;
+    animation-name: fadein;
+    opacity: 1;
+}
+.StudentAdmin.fadeout {
+    animation-duration: 1000ms;
+    animation-name: fadeout;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.StudentAdmin .fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.StudentAdmin .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.StudentAdmin .fade-exit {
+    opacity: 0;
+}

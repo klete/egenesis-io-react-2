@@ -17,7 +17,7 @@ import Logins from './components/Reports/Logins/Logins';
 import Other from './components/Reports/Other/Other';
 import ReportsList from './components/Reports/ReportsList/ReportsList';
 
-import Student from '../../components/Student/Student';
+import Student from './components/Student/Student';
 
 import { getAccredCode, transformAPICompletedCoursesIntoCompletedCourses, sortTranscriptIntoCategories } from '../../utility';
 
@@ -44,7 +44,6 @@ class AdministratorContainer extends Component {
             id: null,
             transcript: null,
             sortedTranscript: null,
-            course: null,
             accreditationCode: '',
             certEntity: 0
         },
@@ -114,6 +113,7 @@ class AdministratorContainer extends Component {
                         lastEvaluatedKey: null
                     }
                 }, () => {
+                    // console.log('Calling /administrator/search');
                     this.props.history.push('/administrator/search');
                 });
             }
@@ -141,9 +141,9 @@ class AdministratorContainer extends Component {
         // console.log('[Administrator.js] studentSelectHandler: ' + studentId);
 
         if (studentId === this.state.student.id) {
-            this.props.history.push('/administrator/search/' + studentId);
-        } else {
-            const student = this.state.search.results.find(student => student.user_no === studentId);
+            // this.props.history.push('/administrator/search/' + studentId);
+        } else if (this.state.search.results) {
+            const student = this.state.search.results.find(student => student.user_no === +studentId);
 
             const certEntity =  +student.cert_entity;
             const accreditationCode = certEntity ? getAccredCode(certEntity).code : '';
@@ -155,7 +155,6 @@ class AdministratorContainer extends Component {
                         id: studentId,
                         transcript: null,
                         sortedTranscript: null,
-                        course: null,
                         accreditationCode: accreditationCode,
                         certEntity: certEntity
                     },
@@ -188,7 +187,7 @@ class AdministratorContainer extends Component {
                 },
                 loading: false,
                 loadMessage: null
-            }, () => this.props.history.push('/administrator/search/' + studentId));
+            });
 
         } catch (error) {
             console.log(error);
@@ -198,25 +197,6 @@ class AdministratorContainer extends Component {
                 loadMessage: null
             }, () => this.handleError(error));
         }
-    }
-
-    resultsSelectHandler = (scId, item) => {
-        // console.log('[Administrator.js] resultsSelectHandler');
-
-        let crs = null;
-
-        if (this.state.student.transcript) {
-            crs = this.state.student.transcript.find(course => {
-                return course.sc_no === +scId;
-            });
-        }
-
-        this.setState({
-            student: {
-                ...this.state.student,
-                course: crs
-            }            
-        }, () => this.props.history.push('/administrator/search/' + this.state.student.id + '/' + scId + '/' + item));
     }
 
     handleAccredCodeChange = (event) => {
@@ -351,6 +331,8 @@ class AdministratorContainer extends Component {
 
     render() {
 
+        // console.log(Route);
+
         return (       
             <ErrorBoundary>     
                 <Layout>
@@ -412,13 +394,12 @@ class AdministratorContainer extends Component {
                                         exact
                                         render={() => <SearchResults 
                                                         loading={this.state.loading}
-                                                        results={this.state.search.results} 
-                                                        select={this.studentSelectHandler} />} />
+                                                        results={this.state.search.results} />} />
                                     <Route 
                                         path="/administrator/search/:studentid" 
-                                        render={() => <Student 
-                                                        select={this.resultsSelectHandler}
+                                        render={() => <Student                                                         
                                                         certificateCodeSelect={this.handleAccredCodeChange}
+                                                        select={this.studentSelectHandler}
                                                         student={this.state.student} />} />
                                 </Switch>
 
@@ -433,4 +414,6 @@ class AdministratorContainer extends Component {
     }
 }
 
-export default withRouter(AdministratorContainer);
+const stuffToExport = withRouter(AdministratorContainer);
+
+export default stuffToExport;

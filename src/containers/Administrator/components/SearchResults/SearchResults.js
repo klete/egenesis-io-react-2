@@ -1,52 +1,84 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './SearchResults.css';
 
 
-const searchResults = (props) => {
+class SearchResults extends React.Component {
 
-    let searchResultsTable = null;
+    state = {
+        searchResults: null
+    };
 
-    if (props.results) {
+    static getDerivedStateFromProps(nextProps, prevState) {
+        // console.log('------------------------------------');
+        // console.log('[SearchResults.js] getDerivedStateFromProps');
+        // console.log(nextProps);
+        // console.log(prevState);
+        // console.log('------------------------------------');
 
-        if (props.results.length === 0) {
+        if (nextProps.results) {
 
-            searchResultsTable = <div style={{margin: '16px'}}>No records found.</div>;
-        
+            let newSearchResults = null;
+
+            if (nextProps.results.length === 0) {
+
+                newSearchResults = <tr><td>No records found.</td></tr>
+            
+            } else {
+                const sortedResults = sortResultsByName(nextProps.results);
+                newSearchResults = sortedResults.map(
+                    (student, index) => {
+                        return (
+                            <tr key={index} >
+                                <td className="studentItem">
+                                    <Link to={'/administrator/search/'+ student.user_no}>{ student.last_name }, { student.first_name } { student.user_no }</Link>
+                                </td>
+                            </tr>);                                            
+                    });
+            }
+
+            return {
+                searchResults: newSearchResults
+            };  
         } else {
-
-            const sortedResults = sortResultsByName(props.results);
-
-            const searchResults = sortedResults.map(
-                (student, index) => {
-                    return (
-                        <tr key={index} 
-                            onClick={() => props.select(student.user_no)}>
-                            <td className="studentItem">
-                                { student.last_name }, { student.first_name } { student.user_no }
-                            </td>
-                        </tr>);
-                });
-        
-            searchResultsTable = (
-                <table id="searchResults">
-                    <tbody>
-                        {searchResults}
-                    </tbody>
-                </table>
-            );    
+            return null;
         }
     }
 
-    return (
-        <div>
-            <h4>Search Results</h4>
+    render () {
+        // console.log('------------------------------------');
+        // console.log('[SearchResults.js] render');
+        // console.log(this.state.searchResults ? this.state.searchResults.length : 0);
+        // console.log(this.props);
+        
+        let styleClassesArray = ['SearchResults'];
 
-            {!props.loading ? searchResultsTable : null}
+        if (this.props.results && !this.props.loading) {
+            styleClassesArray.push('fadein');
+        } else if (!this.props.results && this.props.loading){
+            styleClassesArray.push('fadeout');
+        }
 
-        </div>
-    );
-    
+        const styleClasses = styleClassesArray.join(' ');
+
+        // console.log(styleClasses)
+        // console.log('------------------------------------');
+
+        return (
+            <div className={styleClasses}>
+
+                <h4>Search Results</h4>
+
+                <table id="searchResults">
+                    <tbody>
+                        { this.state.searchResults }
+                    </tbody>
+                </table>
+
+            </div>
+        );
+    }
 } 
 
 const sortResultsByName = (searchResults) => {        
@@ -69,4 +101,4 @@ const sortResultsByName = (searchResults) => {
     return searchResults;
 };
 
-export default searchResults;
+export default SearchResults;

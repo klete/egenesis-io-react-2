@@ -2,7 +2,7 @@ import React from 'react';
 
 const refundPolicy = () => {
     return (
-        <div className="ontainer-fluid">
+        <div className="container-fluid">
             <div className="row">
                 <div id="visitors-header">Refund Policy</div>
             </div>

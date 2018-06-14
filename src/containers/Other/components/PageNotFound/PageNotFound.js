@@ -1,7 +1,7 @@
 import React from 'react';
 
 const pageNotFound = () => (
-    <div className="ontainer-fluid">
+    <div className="container-fluid">
         <div className="row">
             <div id="visitors-header">Page not found!</div>
         </div>

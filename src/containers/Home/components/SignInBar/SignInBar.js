@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import SignInForm from '../SignInForm/SignInForm';
 
+import PropTypes from 'prop-types';
+
 import './SignInBar.css';
 
 const SignInBar = (props) => (
@@ -16,10 +18,14 @@ const SignInBar = (props) => (
                 <Link to="/visitor">Visitors</Link>
             </div>
 
-            <SignInForm loginHandler={props.loginHandler}/>
+            <SignInForm loginHandler={props.loginHandler} />
 
         </div>
     </div>
 );
+
+SignInBar.propTypes = {
+    loginHandler: PropTypes.func.isRequired
+}
 
 export default SignInBar;

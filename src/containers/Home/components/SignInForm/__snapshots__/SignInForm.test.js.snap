@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignInForm /> renders correctly 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="sign-in-form"
+  >
+    <div
+      className="sign-in-form__top-row"
+    >
+      <label
+        className="sign-in-form__label"
+      >
+        User Name:
+      </label>
+      <input
+        autoComplete="off"
+        className="sign-in-form__text-box"
+        name="username"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <label
+        className="sign-in-form__label"
+      >
+        Password:
+      </label>
+      <input
+        autoComplete="off"
+        className="sign-in-form__text-box"
+        name="password"
+        onChange={[Function]}
+        type="password"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Sign In
+      </button>
+    </div>
+    <div
+      className="sign-in-form__bottom-row"
+    >
+      <div
+        className="sign-in-form__bottom-row-item"
+      >
+        <a
+          href="/credentials"
+          onClick={[Function]}
+        >
+          Forgot your password?
+        </a>
+      </div>
+      <div
+        className="sign-in-form__bottom-row-item"
+      >
+        <label>
+          <input
+            checked={false}
+            name="rememberCredentials"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          Remember my information
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+`;

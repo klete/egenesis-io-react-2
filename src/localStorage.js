@@ -1,57 +1,47 @@
-export const saveAuthData = (authData) => {
+export const saveAuthData = ({ token, user }) => {
     try {
         let savableState = {
-            token: authData.token,
-            user: authData.user
-        };
+            token: token,
+            user: user,
+            student: user.is_student ? user : null
+        };        
 
-        if (authData.user.is_student) {
-            savableState.student = authData.user
-        }
+        const payload = JSON.stringify(savableState);
+        localStorage.setItem('auth', payload);
 
-        localStorage.setItem('auth', JSON.stringify(savableState));
+        return true;
     } catch (error) {
-
+        console.log(error);
+        return false;
     }
 };
-export const saveCredentials = (credentials) => {
+export const saveCredentials = ({ savedUsername, rememberCredentials }) => {
     try {
-        if (credentials.rememberCredentials) {
-            localStorage.setItem('credentials', JSON.stringify({
-                savedUsername: credentials.savedUsername
-            }));
+        if (rememberCredentials) {
+            const payload = JSON.stringify({ savedUsername: savedUsername });
+            localStorage.setItem('credentials', payload);
         } else {
             localStorage.removeItem('credentials');
         }
-    } catch (error) {
 
+        return true;
+    } catch (error) {
+        console.log(error);
+        return false;
     }
 };
 
-export const clearAuthData = () => {
-    clear('auth');
-};
-export const clearSavedCredentials = () => {
-    clear('credentials');
-};
-export const loadAuthData = () => {
-    return load('auth');
-};
-export const loadSavedCredentials = () => {
-    return load('credentials');
-};
-
+export const clearAuthData = () => clear('auth');
+export const clearSavedCredentials = () => clear('credentials');
+export const loadAuthData = () => load('auth');
+export const loadSavedCredentials = () => load('credentials');
 
 const load = (item) => {
     try {
         const serializedState = localStorage.getItem(item);
-
-        if (serializedState === null) {
-            return undefined;
-        }
-        
-        return JSON.parse(serializedState);
+        return serializedState === undefined ? null : JSON.parse(serializedState);        
     } catch (error) {
+        console.log(error);
         return undefined;
     }
 };
@@ -59,7 +49,17 @@ const load = (item) => {
 const clear = (item) => {
     try {
         localStorage.removeItem(item);
+        return true;
     } catch (error) {
-        return undefined;
+        console.log(error);
+        return false;
     }
 };
+
+/*
+localStorage["foo"]
+undefined
+
+localStorage.getItem("foo")
+null
+*/

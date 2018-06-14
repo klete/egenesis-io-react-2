@@ -25,3 +25,16 @@ table#courses-list td.results {
 table#courses-list td.pdf {
     text-align: center;
 }
+
+.transcript {
+    margin: 16px;
+}
+
+.Transcript {
+    opacity: 0;
+}
+
+.Transcript.show {
+    opacity: 1;
+    transition: opacity 0.5s 0ms;
+}

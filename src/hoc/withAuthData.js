@@ -4,7 +4,7 @@ import { loadAuthData } from '../localStorage';
 
 
 const withAuthData = (WrappedComponent, axios) => {
-    return class extends Component {
+    class WithAuthData extends Component {
  
         render() {            
 
@@ -29,6 +29,12 @@ const withAuthData = (WrappedComponent, axios) => {
             );
         };
     }
+    WithAuthData.displayName = `WithAuthData(${getDisplayName(WrappedComponent)})`;
+    return WithAuthData;
+}
+
+function getDisplayName(WrappedComponent) {
+    return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
 export default withAuthData;

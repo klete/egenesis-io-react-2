@@ -3,7 +3,7 @@ import React from 'react';
 import './ErrorPage.css';
 
 const errorPage = () => (
-    <div className="ontainer-fluid">
+    <div className="container-fluid">
         <div className="row">
             <div id="visitors-header">Error Page</div>
         </div>

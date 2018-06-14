@@ -22,40 +22,30 @@ class Certificate extends React.Component {
         super(props);
 
         this.state = {
-            certificate: null
-        };
-
-        let certificateStr = "certificate";
-        this.url = this.props.match.url.slice(0, -certificateStr.length) + "results" ;    
+            certificate: null,
+            course: setCourse(props),
+            url: getResultsUrl(props)
+        };        
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        // console.log('[Certificate.js] getDerivedStateFromProps: ');        
+        // console.log('[Certificate.js] getDerivedStateFromProps: ');
+        // console.log(nextProps);
 
-        if (!prevState.certificate && !nextProps.student.course) {
-            // console.log('NO DATA');
+        if (+nextProps.match.params.scid !== prevState.sc_no) {
+            const course = setCourse(nextProps);
+            const student = nextProps.student;
             return {
-                certificate: null
-            };  
-        } else if (!prevState.certificate && nextProps.student.course) {
-            // console.log('LOADING CERTIFICATE');
-            return loadCertificate(nextProps);
-        } else if (prevState.certificate.scid !== nextProps.student.course.sc_no) {
-            // console.log('SHOULD CHANGE CERT');
-            return loadCertificate(nextProps); 
-        } else if (prevState.certificate.certEntity !== nextProps.student.certEntity) {
-            // console.log('SHOULD CHANGE CODE');
-            return loadCertificate(nextProps); 
+                course: course,
+                certificate: loadCertificate(student, course),
+                url: getResultsUrl(nextProps)
+            };
         } else {
-            // console.log('SAME');
-            return {
-                certificate: prevState.certificate
-            };    
-        }
+            return null;
+        }        
     }
 
     handlePrintingTips() {
-        // console.log('[Certificate.js] handlePrintingTips');
         window.open('/printing-tips', 'printingtips', 'width=680, height=550, scrollbars=yes, resizable=yes');
     }
 
@@ -110,7 +100,7 @@ class Certificate extends React.Component {
                         : null}
     
                     <div className="panel-heading">
-                        Course Summary: <Link to={this.url}>{ this.state.certificate.title }</Link>
+                        Course Summary: <Link to={this.state.url}>{ this.state.certificate.title }</Link>
                     </div>
                     <div className="panel-body">
     
@@ -161,7 +151,7 @@ class Certificate extends React.Component {
                                  { this.state.certificate.date_completed }
                              </div>
                              <div id="certificate-ceu">
-                                 { this.state.certificate.ceu } hours CE Lecture
+                                 { this.state.certificate.ceu }&nbsp;hours&nbsp;CE&nbsp;Lecture
                              </div>                    
                              <div id="ems-coordinator-signature">                    
                                  <img src={imgScottR} alt="Scott R Signature" border="0" height="28" width="145" />
@@ -185,7 +175,7 @@ class Certificate extends React.Component {
                                  Fire Training Coordinator
                              </div>
                              <div id="egenesis-address">
-                                 eGenesis, Inc. &bull; 2306 Blodgett St. &bull; Unit 1 &bull; Houston, TX 77004 &bull; 1-866-538-9911
+                                 eGenesis, Inc. &bull; 2306 Blodgett St. &bull; Unit 1 &bull; Houston, TX 77004
                              </div>
                              <div id="reference-number">
                                  Ref #{ this.state.certificate.scid }
@@ -203,6 +193,24 @@ class Certificate extends React.Component {
         }
     }
 }
+
+const setCourse = (props) => {
+    if (props.student.transcript) {
+        return props.student.transcript.find(trs_course => {
+            return trs_course.sc_no === +props.match.params.scid;
+        });    
+    } else {
+        return null;
+    }
+}; 
+
+const getResultsUrl = (props) => {
+    // Remove "certificate" from the end of the current url and add "results"
+    let certificateStr = "certificate";
+    const url = props.match.url.slice(0, -certificateStr.length) + "results" ;    
+    return url;
+};
+
 
 const getCertName = (student) => {
     const firstname = student.first_name;
@@ -223,20 +231,16 @@ const getCertName = (student) => {
     return name;
 }
 
-const loadCertificate = (props) => {
-    // console.log('[Certificate.js] loadCertificate: ');
-    const course = props.student.course;
-    
+const loadCertificate = (student, course) => {
+    // console.log('[Certificate.js] loadCertificate: ');    
     // Can reload the student since it may be stored in local storage, but can't reload the selected course.
 
-    if (course) {
+    if (student && course) {
         // console.log('[Certificate.js] loadCertificate: setting data');
         const courseData = getCourse(course.course_no);
         const dateCompleted = moment(course.date_completed).format('MM/DD/YYYY');
         const ceu = course.allow_certificate ? course.ceu.toFixed(2) : null;
         const category = getCategory(+course.cecat_no).name;            
-
-        // console.log(props);
 
         const certificate = {
             scid: +course.sc_no,
@@ -244,22 +248,18 @@ const loadCertificate = (props) => {
             category: category,
             date_completed: dateCompleted,
             ceu: ceu,
-            certname: props.student.cert_name,
-            certEntity: props.student.certEntity,
+            certname: student.cert_name,
+            certEntity: student.certEntity,
             departmentid: courseData.department_no
         };
 
         if (!certificate.certname) {
-            certificate.certname = getCertName(props.student);
+            certificate.certname = getCertName(student);
         }            
 
-        return {
-            certificate: certificate
-        };
+        return certificate;
     } else {
-        return {
-            certificate: null
-        };
+        return null;
     }
 }
 

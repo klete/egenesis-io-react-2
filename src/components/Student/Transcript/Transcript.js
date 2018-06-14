@@ -7,32 +7,40 @@ import './Transcript.css';
 
 const transcript = (props) => {
 
-    let transcript = [];
+    let transcript = null;
+    let classes = ['Transcript'];
 
-    if (props.student.sortedTranscript) {
-
-        if (props.student.transcript.length === 0) {
+    if (props.sortedTranscript) {
+        
+        if (props.transcript.length === 0) {
             transcript = 'This student has no completed courses.';
         } else {
-            transcript = props.student.sortedTranscript.map(category => {
+            transcript = props.sortedTranscript.map(category => {
                 return (
-                    <Category 
-                        key={category.cecat_no} 
-                        select={props.select}
-                        {...category} />
+                    <Category     
+                        key={category.cecat_no}                                                
+                        {...category} />                    
                 );                               
             });    
         }
 
+        classes.push('show');
     }
 
     return (
         <div className="row">
             <div className="col-lg-12">
-                <h4>Transcript</h4>
-                <div style={{margin: '16px'}}>
-                    {transcript}
+                    
+                <div className={classes.join(' ')}>                    
+    
+                    <h4>Transcript</h4>
+
+                    <div className="transcript">                    
+                        {transcript}
+                    </div>
+
                 </div>
+                
             </div>
         </div>
     );

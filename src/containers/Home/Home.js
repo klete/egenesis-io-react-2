@@ -7,6 +7,7 @@ import axios from 'axios';
 import { saveAuthData, saveCredentials } from '../../localStorage';
 
 import logo from './assets/logo.png';
+
 import './Home.css';
 
 
@@ -18,51 +19,46 @@ class HomeContainer extends Component {
     };
 
     componentDidMount() {
-        // console.log('[Home.js] componentDidMount ');
         document.body.style.backgroundColor = '#fff';
     }
     
     componentWillUnmount() {
-        // console.log('[Home.js] componentWillUnmount');
         document.body.style.backgroundColor = null;
     }
 
-    loginHandler = async (authData) => {
-
-        const {username, rememberCredentials} = authData;
-
+    loginHandler = (authData) => {
         this.setState({
             loading: true, 
             error: null
+        }, async () => {
+            try {
+                const response = await axios.post('/login', authData);
+                const { token, user } = response.data;
+                
+                this.setState({ loading: false });
+        
+                saveAuthData({
+                    token: token,
+                    user: user
+                });
+                saveCredentials({
+                    savedUsername: authData.username,
+                    rememberCredentials: authData.rememberCredentials
+                });
+        
+                if (user.is_student) {
+                    this.props.history.push('/student');
+                } else {
+                    this.props.history.push('/administrator');                    
+                }     
+            } catch(error) {
+                console.log(error);
+                this.setState({
+                    loading: false,
+                    error: error
+                });
+            }      
         });
-
-        try {
-            const response = await axios.post('/login', authData);
-            const { token, user } = response.data;
-            
-            this.setState({loading: false});
-    
-            saveAuthData({
-                token: token,
-                user: user
-            })
-            saveCredentials({
-                savedUsername: username,
-                rememberCredentials: rememberCredentials
-            })
-    
-            if (user.is_student) {
-                this.props.history.push('/student');
-            } else {
-                this.props.history.push('/administrator');                    
-            }     
-        } catch(error) {
-            console.log(error);
-            this.setState({
-                loading: false,
-                error: error
-            });
-        }       
     };
 
     render() {

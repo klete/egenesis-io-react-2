@@ -202,13 +202,15 @@ class CredentialRetrieval extends Component {
     render () {
 
         return (
-            <div className="ontainer-fluid">
+            <div className="container-fluid">
                 <div className="row">
                     <div id="visitors-header">User Name and Password Request</div>
                 </div>
                 <div className="row" id="visitors-content">
 
-                    <form className="form-horizontal" onSubmit={this.submitHandler} onReset={this.resetHandler}>
+                    <form className="form-horizontal" 
+                        onSubmit={this.submitHandler} 
+                        onReset={this.resetHandler}>
                         
                         <div className="form-group">
                             <div className="col-sm-2"></div>

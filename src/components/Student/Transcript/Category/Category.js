@@ -6,7 +6,6 @@ const category = (props) => {
     let completedCourses = props.courses.map(course => {
         return <CategoryItem 
                     key={course.sc_no} 
-                    select={props.select}
                     {...course} />;
     });
 

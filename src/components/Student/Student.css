@@ -1,0 +1,13 @@
+.Student .fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.Student .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.Student .fade-exit {
+    opacity: 0;
+}

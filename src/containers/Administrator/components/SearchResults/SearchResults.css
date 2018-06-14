@@ -1,5 +1,6 @@
 table#searchResults {
     margin: 16px;
+    
 }
 table#searchResults td {
     padding: 8px;
@@ -10,4 +11,45 @@ td.studentItem {
 td.studentItem:hover { 
     cursor: pointer;
     text-decoration: underline; 
+}
+
+/* .SearchResults {
+    opacity: 0;
+    transition: opacity 0.5s 0ms;
+}
+.SearchResults.show { 
+    opacity: 1;
+} */
+
+.SearchResults {
+    opacity: 0;
+}
+
+.SearchResults.fadein {
+    animation-duration: 3000ms;
+    animation-name: fadein;
+    opacity: 1;
+}
+.SearchResults.fadeout {
+    animation-duration: 1000ms;
+    animation-name: fadeout;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

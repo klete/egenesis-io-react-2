@@ -39,7 +39,7 @@ const contact = () => {
     };
 
     return (
-        <div className="ontainer-fluid">
+        <div className="container-fluid">
             <div className="row">
                 <div id="visitors-header">Contact Us</div>
             </div>
