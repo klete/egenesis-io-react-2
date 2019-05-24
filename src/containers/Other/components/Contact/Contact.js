@@ -57,14 +57,14 @@ const contact = () => {
                             Houston, Texas 77004
                         </td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                         <td style={style3}>Office:</td>
                         <td style={style4}>281-538-9911</td>
                     </tr>
                     <tr>
                         <td style={style3}>Fax:</td>
                         <td style={style4}>281-538-9905</td>
-                    </tr>
+                    </tr> */}
                 </tbody>
                 </table>
             
@@ -73,13 +73,13 @@ const contact = () => {
                 <table border="0" cellPadding="0" cellborder="0" style={style2}>
                 <tbody>
                     <tr>
-                        <td style={style6}>To Report a Website Problem:</td>
-                        <td style={style7}><b>webmaster@egenesis.cc</b></td>
+                        {/* <td style={style6}>To Report a Website Problem:</td> */}
+                        <td style={style7}><b>webmaster@egenesis.io</b></td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                         <td style={style6}>To Reach the eGenesis Offices:</td>
                         <td style={style7}><b>inquiry@egenesis.cc</b></td>
-                    </tr>
+                    </tr> */}
                 </tbody>
                 </table>
             

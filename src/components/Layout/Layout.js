@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-import Copyright from '../Copyright/Copyright';
+// import Copyright from '../Copyright/Copyright';
 
 import withAuthData from '../../hoc/withAuthData'
 
@@ -141,7 +141,7 @@ class Layout extends Component {
 
                     <div style={{margin: '0', padding: '1em .5em', height: '100%'}}>
                         {this.props.children}
-                        <Copyright />
+                        {/* <Copyright /> */}
                     </div>
                     
                 </div>                    
