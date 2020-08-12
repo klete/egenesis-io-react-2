@@ -7,7 +7,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "html2canvas": "^1.0.0-rc.3",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.0.0",
     "moment": "^2.24.0",
     "npm": "^6.9.0",
     "prop-types": "^15.7.2",
@@ -15,7 +15,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "3.4.2",
     "react-test-renderer": "^16.8.6",
     "react-transition-group": "^2.9.0"
   },
